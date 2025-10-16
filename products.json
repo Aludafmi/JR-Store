@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Ejercitador",
+        "category": "Electrónicos", 
+        "price": 120,
+        "description": "Ideal para bajar de peso",
+        "image": "images/1.png",
+        "demand": 95
+    },
+    {
+        "id": 2,
+        "name": "Licuadora",
+        "category": "Accesorios",
+        "price": 39.90,
+        "description": "Descripción B",
+        "image": "images/2.png",
+        "demand": 88
+    },
+    {
+        "id": 3,
+        "name": "Producto C",
+        "category": "Hogar",
+        "price": 59.90,
+        "description": "Descripción C",
+        "image": "images/3.png",
+        "demand": 74
+    },
+    {
+        "id": 4,
+        "name": "Producto D",
+        "category": "Ropa",
+        "price": 89.90,
+        "description": "Descripción D",
+        "image": "images/4.png",
+        "demand": 64
+    },
+    {
+        "id": 5,
+        "name": "Producto E",
+        "category": "Electrónicos",
+        "price": 199.00,
+        "description": "Descripción E",
+        "image": "images/5.png",
+        "demand": 120
+    },
+    {
+        "id": 6,
+        "name": "Producto F",
+        "category": "Accesorios",
+        "price": 45.00,
+        "description": "Descripción F",
+        "image": "images/6.png",
+        "demand": 50
+    },
+    {
+        "id": 7,
+        "name": "Producto G",
+        "category": "Hogar",
+        "price": 75.00,
+        "description": "Descripción G",
+        "image": "images/7.png",
+        "demand": 110
+    },
+    {
+        "id": 8,
+        "name": "Producto H",
+        "category": "Electrónicos",
+        "price": 159.90,
+        "description": "Descripción H",
+        "image": "images/8.png",
+        "demand": 99
+    },
+    {
+        "id": 9,
+        "name": "Producto I",
+        "category": "Ropa",
+        "price": 24.90,
+        "description": "Descripción I",
+        "image": "images/9.png",
+        "demand": 30
+    },
+    {
+        "id": 10,
+        "name": "Producto J",
+        "category": "Accesorios",
+        "price": 69.90,
+        "description": "Descripción J",
+        "image": "images/10.png",
+        "demand": 85
+    }
+]
