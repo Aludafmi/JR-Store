@@ -73,7 +73,7 @@ function renderProducts(list) {
     productGrid.appendChild(card);
   });
 }
-
+ 
 // Renderizar carrusel top 8 por demand
 function renderCarousel() {
   const top = PRODUCTS.slice().sort((a, b) => (b.demand || 0) - (a.demand || 0)).slice(0, 8);
