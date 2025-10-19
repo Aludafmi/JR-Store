@@ -1,92 +1,1334 @@
 [
     {
-        "id": 1,
-        "name": "Ejercitador",
-        "category": "Electrónicos", 
-        "price": 120,
-        "description": "Ideal para bajar de peso",
-        "image": "images/1.png",
-        "demand": 95
-    },
-    {
         "id": 2,
-        "name": "Licuadora",
-        "category": "Accesorios",
-        "price": 39.90,
-        "description": "Descripción B",
-        "image": "images/2.png",
-        "demand": 88
-    },
-    {
-        "id": 3,
-        "name": "Producto C",
-        "category": "Hogar",
-        "price": 59.90,
-        "description": "Descripción C",
-        "image": "images/3.png",
-        "demand": 74
-    },
-    {
-        "id": 4,
-        "name": "Producto D",
-        "category": "Ropa",
-        "price": 89.90,
-        "description": "Descripción D",
-        "image": "images/4.png",
-        "demand": 64
-    },
-    {
-        "id": 5,
-        "name": "Producto E",
-        "category": "Electrónicos",
-        "price": 199.00,
-        "description": "Descripción E",
-        "image": "images/5.png",
-        "demand": 120
-    },
-    {
-        "id": 6,
-        "name": "Producto F",
-        "category": "Accesorios",
-        "price": 45.00,
-        "description": "Descripción F",
-        "image": "images/6.png",
+        "name": "MEGAFONO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/2.png",
         "demand": 50
     },
     {
+        "id": 3,
+        "name": "ESQUINERO DE ALUMINIO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/3.png",
+        "demand": 51
+    },
+    {
+        "id": 4,
+        "name": "KIT DE ESTACION CONSOLA INCLUIDA",
+        "category": "STREMERS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/10. STREMERS/4.png",
+        "demand": 52
+    },
+    {
+        "id": 5,
+        "name": "SOPORTE PARA MICRÓFONO Y CELULAR",
+        "category": "STREMERS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/10. STREMERS/5.png",
+        "demand": 53
+    },
+    {
+        "id": 6,
+        "name": "PALO STICK BLUETOOT H Y LUCES",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/6.png",
+        "demand": 54
+    },
+    {
         "id": 7,
-        "name": "Producto G",
-        "category": "Hogar",
-        "price": 75.00,
-        "description": "Descripción G",
-        "image": "images/7.png",
-        "demand": 110
+        "name": "REPELENTE ULTRASONICO ",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/7.png",
+        "demand": 55
     },
     {
         "id": 8,
-        "name": "Producto H",
-        "category": "Electrónicos",
-        "price": 159.90,
-        "description": "Descripción H",
-        "image": "images/8.png",
-        "demand": 99
+        "name": "ELECTROES TIMULADOR ABDOMEN",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/8.png",
+        "demand": 56
     },
     {
         "id": 9,
-        "name": "Producto I",
-        "category": "Ropa",
-        "price": 24.90,
-        "description": "Descripción I",
-        "image": "images/9.png",
-        "demand": 30
+        "name": "BALANZA GRAMERA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/9.png",
+        "demand": 57
     },
     {
         "id": 10,
-        "name": "Producto J",
-        "category": "Accesorios",
-        "price": 69.90,
-        "description": "Descripción J",
-        "image": "images/10.png",
+        "name": "CAÑA TELESCOPICA 3.6 METROS VERDE Y ROJO",
+        "category": "PESCA",
+        "price": 200,
+        "description": "IDEAL PARA UNA BUENA PESCA",
+        "image": "images/09. PESCA/10.png",
+        "demand": 58
+    },
+    {
+        "id": 11,
+        "name": "CAÑA DE ACERO AL CARBONO 2.1-2.4 Y 2.7 METROS",
+        "category": "PESCA",
+        "price": 200,
+        "description": "IDEAL PARA UNA BUENA PESCA",
+        "image": "images/09. PESCA/11.png",
+        "demand": 59
+    },
+    {
+        "id": 12,
+        "name": "KIT DE PESCA ",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/12.png",
+        "demand": 60
+    },
+    {
+        "id": 13,
+        "name": "CARRETE 4000",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/13.png",
+        "demand": 61
+    },
+    {
+        "id": 14,
+        "name": "CARRETE 7000",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/14.png",
+        "demand": 62
+    },
+    {
+        "id": 15,
+        "name": "ANZUELOS ACERO AL CARBONO DESDE EL 2 AL 20",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/15.png",
+        "demand": 63
+    },
+    {
+        "id": 16,
+        "name": "MULTIFILAMENTO X 4 HILOS DISTINTOS MM",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/16.png",
+        "demand": 64
+    },
+    {
+        "id": 17,
+        "name": "HILOS DE PESCA DISTINTOS MILIMETROS",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/17.png",
+        "demand": 65
+    },
+    {
+        "id": 18,
+        "name": "MULTIPLOMADA DISTINTOS GRAMAJES",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/18.png",
+        "demand": 66
+    },
+    {
+        "id": 19,
+        "name": "SEÑUELOS DE RIO 3-7-10 GRAMOS",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/19.png",
+        "demand": 67
+    },
+    {
+        "id": 20,
+        "name": "CARRETE BASICO 200 A MATERIAL ABS VIENE CON HILO",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/20.png",
+        "demand": 68
+    },
+    {
+        "id": 21,
+        "name": "MARIPOSA PARA TRUCHA",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/21.png",
+        "demand": 69
+    },
+    {
+        "id": 22,
+        "name": "PORTA CAÑAS 16 SLOTS",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/22.png",
+        "demand": 70
+    },
+    {
+        "id": 23,
+        "name": "COMBO PESCA TELESCOPICA 3.6 MT+ CARRETE 4000+ ANZUELOS+ SEÑUELOS+ BOYA+ PLOMADA",
+        "category": "PESCA",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/09. PESCA/23.png",
+        "demand": 71
+    },
+    {
+        "id": 24,
+        "name": "ARRANCADOR DE BATERIAS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/24.png",
+        "demand": 72
+    },
+    {
+        "id": 25,
+        "name": "MASAJEADOR TIPO  ALMOHADA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/25.png",
+        "demand": 73
+    },
+    {
+        "id": 26,
+        "name": "MOVILADOR GAMER",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/26.png",
+        "demand": 74
+    },
+    {
+        "id": 27,
+        "name": "CONTROL AIR MOUSE",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/27.png",
+        "demand": 75
+    },
+    {
+        "id": 28,
+        "name": "MULTIPLICADOR DE CIG ARRERA 120 W",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/28.png",
+        "demand": 76
+    },
+    {
+        "id": 29,
+        "name": "TORRE CORRIENTE CO N SUPRESOR Y USB",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/29.png",
+        "demand": 77
+    },
+    {
+        "id": 30,
+        "name": "TECLADO Y MOUSE GAMER",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/30.png",
+        "demand": 78
+    },
+    {
+        "id": 31,
+        "name": "CEPILLO SONICO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/31.png",
+        "demand": 79
+    },
+    {
+        "id": 32,
+        "name": "ASPIRADOR 3 EN 1",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/32.png",
+        "demand": 80
+    },
+    {
+        "id": 33,
+        "name": "IPEGA MANDO  BLUETOOTH ",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/33.png",
+        "demand": 81
+    },
+    {
+        "id": 34,
+        "name": "MASAJEADOR DE PI ES Y PIERNAS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/34.png",
+        "demand": 82
+    },
+    {
+        "id": 35,
+        "name": "POWER BANK 5000 mh",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/35.png",
+        "demand": 83
+    },
+    {
+        "id": 36,
+        "name": "MASAJEADOR PISTOLA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/36.png",
+        "demand": 84
+    },
+    {
+        "id": 37,
+        "name": "AURICULAR GATO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/37.png",
         "demand": 85
+    },
+    {
+        "id": 38,
+        "name": "TABLERO DE BOXEO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/38.png",
+        "demand": 86
+    },
+    {
+        "id": 39,
+        "name": "CARGADOR 120 WA TTS VEHÍCULO ",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/39.png",
+        "demand": 87
+    },
+    {
+        "id": 40,
+        "name": "NUTRIA QUE RESPIRA SO NIDO Y LUCES",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/40.png",
+        "demand": 88
+    },
+    {
+        "id": 41,
+        "name": "CONSOLA PORTATIL P LAY,SNS,ETC",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/41.png",
+        "demand": 89
+    },
+    {
+        "id": 42,
+        "name": "BLUETOOTH MUSIC PA RA VEHÍCULO ",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/42.png",
+        "demand": 90
+    },
+    {
+        "id": 43,
+        "name": "CONTROL PUNTERO PARA PROYECTOR",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/43.png",
+        "demand": 91
+    },
+    {
+        "id": 44,
+        "name": "SILLA GAMERS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/44.png",
+        "demand": 92
+    },
+    {
+        "id": 45,
+        "name": "TECLADO Y MOUSE D E UNA MANO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/45.png",
+        "demand": 93
+    },
+    {
+        "id": 46,
+        "name": "KIT GAMER 5 EN 1",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": " IDEAL PARA JUEGOS EN  LINEA DESDE CELULAR O TABLET",
+        "image": "images/04. ELECTRONICOS/46.png",
+        "demand": 94
+    },
+    {
+        "id": 47,
+        "name": "VENTILADOR HUMIDIFICADOR 10 WATTS ",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/47.png",
+        "demand": 95
+    },
+    {
+        "id": 48,
+        "name": "MANGUERA EXPANDIBLE DE 15, 30 Y 60 METROS",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "COLOR VERDE Y AZUL",
+        "image": "images/06. HOGAR/48.png",
+        "demand": 96
+    },
+    {
+        "id": 49,
+        "name": "COLGADOR PERCHERO TRIANGULAR ",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/49.png",
+        "demand": 97
+    },
+    {
+        "id": 50,
+        "name": "DISPENSADOR DE PAPEL HIGIÉNICO ",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/50.png",
+        "demand": 98
+    },
+    {
+        "id": 51,
+        "name": "SOPORTE RUEDA ABDOMINAL",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "IDEAL PARA QUEMAR GRASA DEL ABDOMEN",
+        "image": "images/03. CUIDADO_PERSONAL/51.png",
+        "demand": 99
+    },
+    {
+        "id": 52,
+        "name": "LICUADORA TRITURADORA RAF",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "COLORES VARIADOS",
+        "image": "images/04. ELECTRONICOS/52.png",
+        "demand": 100
+    },
+    {
+        "id": 53,
+        "name": "ORGANIZADOR DE METAL PLEGABLE",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "IDEAL PARA COCINA, SALA O TERRAZA",
+        "image": "images/06. HOGAR/53.png",
+        "demand": 101
+    },
+    {
+        "id": 54,
+        "name": "MINI MÁQUINA DE COSER PROFESIONAL",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "TRABAJA CON 12 PUNTADAS DIFERENTES",
+        "image": "images/04. ELECTRONICOS/54.png",
+        "demand": 102
+    },
+    {
+        "id": 55,
+        "name": "FAJA BODY RELOJ DE ARENA",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "TODAS LAS TALLAS XS/S/M/L/XL",
+        "image": "images/03. CUIDADO_PERSONAL/55.png",
+        "demand": 103
+    },
+    {
+        "id": 56,
+        "name": "TENDEDERO DE ROPA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "3 NIVELES",
+        "image": "images/06. HOGAR/56.png",
+        "demand": 104
+    },
+    {
+        "id": 57,
+        "name": "SECADOR DE ZAPATILLAS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PARA TODO TIPODE ZAPATOS",
+        "image": "images/04. ELECTRONICOS/57.png",
+        "demand": 105
+    },
+    {
+        "id": 58,
+        "name": "MAQUINA SONAR 3 EN 1",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "RECARGABLE",
+        "image": "images/04. ELECTRONICOS/58.png",
+        "demand": 106
+    },
+    {
+        "id": 59,
+        "name": "SET DE DADOS PROFESIONAL",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "MALETIN CON 46 PIEZAS",
+        "image": "images/05. HERRAMIENTAS/59.png",
+        "demand": 107
+    },
+    {
+        "id": 60,
+        "name": "SET CORTADOR DE VIDRIO Y CERÁMICA",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "MULTIFUNCIONAL",
+        "image": "images/05. HERRAMIENTAS/60.png",
+        "demand": 108
+    },
+    {
+        "id": 61,
+        "name": "BAÑO ECOLÓGICO PARA MASCOTAS",
+        "category": "MASCOTAS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/07. MASCOTAS/61.png",
+        "demand": 109
+    },
+    {
+        "id": 62,
+        "name": "COLGADOR PERCHERO DOBLE 35Kg y 68 Kg",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/62.png",
+        "demand": 110
+    },
+    {
+        "id": 63,
+        "name": "DISPENSADOR DE MENESTRAS 10K",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/63.png",
+        "demand": 111
+    },
+    {
+        "id": 64,
+        "name": "BALANZA DIGITAL CON PILA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/64.png",
+        "demand": 112
+    },
+    {
+        "id": 65,
+        "name": "MINI COOLER PARA AUTO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/65.png",
+        "demand": 113
+    },
+    {
+        "id": 66,
+        "name": "DESTORNILLADOR ATORNILLADOR INALAMBRICO",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/05. HERRAMIENTAS/66.png",
+        "demand": 114
+    },
+    {
+        "id": 67,
+        "name": "SOFA INFLABLE RECLINABLE",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "COLORES VARIADOS",
+        "image": "images/06. HOGAR/67.png",
+        "demand": 115
+    },
+    {
+        "id": 68,
+        "name": "ASPIRADORA PARA ACAROS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/68.png",
+        "demand": 116
+    },
+    {
+        "id": 69,
+        "name": "CLAVO DE ACERO REDONDO",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "PARA PISTOLA A PRESIÓN",
+        "image": "images/05. HERRAMIENTAS/69.png",
+        "demand": 117
+    },
+    {
+        "id": 70,
+        "name": "CAMARA DE VIGILANCIA CON PANTALLA ",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "VIDEO LLAMADA EN TIEMPO REAL",
+        "image": "images/04. ELECTRONICOS/70.png",
+        "demand": 118
+    },
+    {
+        "id": 71,
+        "name": "EXPRIMIDOR DE NARANJA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "IDEAL PARA LOS DESAYUNOS",
+        "image": "images/06. HOGAR/71.png",
+        "demand": 119
+    },
+    {
+        "id": 72,
+        "name": "ORGANIZADOR DE CEREALES 7 FRASCOS",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/72.png",
+        "demand": 120
+    },
+    {
+        "id": 73,
+        "name": "QUITA GRASA OVEN CLEANER",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "QUITA GRASA OVEN CLEANER",
+        "image": "images/06. HOGAR/73.png",
+        "demand": 121
+    },
+    {
+        "id": 74,
+        "name": "TOBILLERA DE COMPRESIÓN",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/03. CUIDADO_PERSONAL/74.png",
+        "demand": 122
+    },
+    {
+        "id": 75,
+        "name": "ESTANTE ORGANIZADOR DE ALMACENAMIENTO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "MATERIAL: HIERRO",
+        "image": "images/06. HOGAR/75.png",
+        "demand": 123
+    },
+    {
+        "id": 76,
+        "name": "PARCHE DESINTOXICANTE KIYOME",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "ALIVIA EL ESTRES",
+        "image": "images/03. CUIDADO_PERSONAL/76.png",
+        "demand": 124
+    },
+    {
+        "id": 77,
+        "name": "VENTILADOR HUMIDIFICADOR DOBLE",
+        "category": "VERANO",
+        "price": 200,
+        "description": "REFRESCA - ENFRIA",
+        "image": "images/11. VERANO/77.png",
+        "demand": 125
+    },
+    {
+        "id": 78,
+        "name": "RESTAURADOR DE PARTES NEGRAS PARA AUTO EN SPRAY",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "RECUPERA SU COLOR Y DA BRILLO",
+        "image": "images/02. ACESORIOS_VEHICULOS/78.png",
+        "demand": 126
+    },
+    {
+        "id": 79,
+        "name": "RESTAURADOR DE PARTES NEGRAS PARA AUTO",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "RENUEVA Y PROTEGE",
+        "image": "images/02. ACESORIOS_VEHICULOS/79.png",
+        "demand": 127
+    },
+    {
+        "id": 80,
+        "name": "ORGANIZADOR PARA VEHICULO",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "MULTIFUNCIONAL",
+        "image": "images/02. ACESORIOS_VEHICULOS/80.png",
+        "demand": 128
+    },
+    {
+        "id": 81,
+        "name": "ORGANIZADOR ASIENTO ",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/02. ACESORIOS_VEHICULOS/81.png",
+        "demand": 129
+    },
+    {
+        "id": 82,
+        "name": "ALMOHADA CERVICAL VEHÍCULO",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/02. ACESORIOS_VEHICULOS/82.png",
+        "demand": 130
+    },
+    {
+        "id": 83,
+        "name": "ASIENTO GEL CON FUNDA",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/02. ACESORIOS_VEHICULOS/83.png",
+        "demand": 131
+    },
+    {
+        "id": 84,
+        "name": "LAMPARA MATA MOSQUITO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "MEDIDA: 26 x 12CM",
+        "image": "images/06. HOGAR/84.png",
+        "demand": 132
+    },
+    {
+        "id": 85,
+        "name": "LAMPARA LED MARIO BROSS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "RECARGABLEY PORTATIL",
+        "image": "images/04. ELECTRONICOS/85.png",
+        "demand": 133
+    },
+    {
+        "id": 86,
+        "name": "LENTES BLUETOOTH CON AUDÍFONOS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "BLANCO Y NEGRO",
+        "image": "images/04. ELECTRONICOS/86.png",
+        "demand": 134
+    },
+    {
+        "id": 87,
+        "name": "ANTENA DE TV DIGITAL",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "SEÑAL HD",
+        "image": "images/04. ELECTRONICOS/87.png",
+        "demand": 135
+    },
+    {
+        "id": 88,
+        "name": "MOSQUITERO KWAII",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "VARIEDAD DE MODELOS",
+        "image": "images/06. HOGAR/88.png",
+        "demand": 136
+    },
+    {
+        "id": 89,
+        "name": "PISTOLA DE CLAVOS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "HERRAMIENTA DE ALTAPRECISIÓN",
+        "image": "images/04. ELECTRONICOS/89.png",
+        "demand": 137
+    },
+    {
+        "id": 90,
+        "name": "LAMPARA DE PROYECCIÓN DE ESTRELLAS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "VARIEDAD DE COLORES",
+        "image": "images/04. ELECTRONICOS/90.png",
+        "demand": 138
+    },
+    {
+        "id": 91,
+        "name": "BOLA DE HIELO PARA EL ROSTRO",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "PROMUEVE LA SALUD DE LA PIEL",
+        "image": "images/03. CUIDADO_PERSONAL/91.png",
+        "demand": 139
+    },
+    {
+        "id": 92,
+        "name": "SHAMPOO DE JENGIBRE",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "CONTENIDO: 400ml",
+        "image": "images/03. CUIDADO_PERSONAL/92.png",
+        "demand": 140
+    },
+    {
+        "id": 93,
+        "name": "CARGADOR PORTÁTIL SOLAR S1",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "SE RECARGA CON ELECTRICIDAD Y ENERGIA SOLAR",
+        "image": "images/04. ELECTRONICOS/93.png",
+        "demand": 141
+    },
+    {
+        "id": 94,
+        "name": "SOPORTE CON VENTOSA PARA AUTO",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "GIRATORIO VERTICAL Y HORIZONTAL",
+        "image": "images/02. ACESORIOS_VEHICULOS/94.png",
+        "demand": 142
+    },
+    {
+        "id": 95,
+        "name": "FILTRO PURIFICADOR DE AGUA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "ADAPTABLE A CUALQUIER CAÑO",
+        "image": "images/06. HOGAR/95.png",
+        "demand": 143
+    },
+    {
+        "id": 96,
+        "name": "RIZADOR DE PESTAÑAS ELÉCTRICO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PORTATIL Y LIGERO",
+        "image": "images/06. HOGAR/96.png",
+        "demand": 144
+    },
+    {
+        "id": 97,
+        "name": " MOSQUITERO DE TULL",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "IDEAL PARA CAMA DE 1½ y 2 PLAZAS",
+        "image": "images/06. HOGAR/97.png",
+        "demand": 145
+    },
+    {
+        "id": 98,
+        "name": "MASAJEADOR RELAX TONE",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "ALIVIA TENSIONES Y CONTRACTURAS MUSCULARES",
+        "image": "images/03. CUIDADO_PERSONAL/98.png",
+        "demand": 146
+    },
+    {
+        "id": 99,
+        "name": " FOCO SOLAR PELOTA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/99.png",
+        "demand": 147
+    },
+    {
+        "id": 100,
+        "name": "KIT DE 3 FOCOS LED",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "INCLUYE CONTROL",
+        "image": "images/04. ELECTRONICOS/100.png",
+        "demand": 148
+    },
+    {
+        "id": 101,
+        "name": "RAQUETA ELÉCTRICA MATA MOSQUITOS",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "IDEAL PARAMOSQUITOS Y ZANCUDOS VARIEDAD DE COLORES",
+        "image": "images/04. ELECTRONICOS/101.png",
+        "demand": 149
+    },
+    {
+        "id": 102,
+        "name": "MORRAL ANTIR",
+        "category": "ACCESORIO PERSONAL",
+        "price": 200,
+        "description": "IMPERMEABLE Y RESISTENTE",
+        "image": "images/01. ACCESORIO_PERSONAL/102.png",
+        "demand": 150
+    },
+    {
+        "id": 103,
+        "name": "ZAPATERO ACRÍLICO 6 NIVELES",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/103.png",
+        "demand": 151
+    },
+    {
+        "id": 104,
+        "name": "SCOOTER CON LUCES PARA NIÑOS",
+        "category": "NIÑOS",
+        "price": 200,
+        "description": "INCREIBLE Y DIVERTIDO SCOOTER CON LUCES RGB EN LAS RUEDAS",
+        "image": "images/08. NIÑOS/104.png",
+        "demand": 152
+    },
+    {
+        "id": 105,
+        "name": "RACK DE TV FIJO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "MATERIAL: METAL RESISTENTE",
+        "image": "images/06. HOGAR/105.png",
+        "demand": 153
+    },
+    {
+        "id": 106,
+        "name": "MINI PROYECTOR SMART",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "GIRA 180°, WIFI Y BLUETOOTH, RESOLUCIÓN DE 1280X720, CON ANDROID Y NETFLIX",
+        "image": "images/04. ELECTRONICOS/106.png",
+        "demand": 200
+    },
+    {
+        "id": 107,
+        "name": "IRRIGADOR DENTAL",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "TIEMPO DE TRABAJO: 4 horas",
+        "image": "images/03. CUIDADO_PERSONAL/107.png",
+        "demand": 80
+    },
+    {
+        "id": 108,
+        "name": "SET DE HERRAMIENTAS DE 40 PCS",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "KIT DE 40 PIEZAS",
+        "image": "images/05. HERRAMIENTAS/108.png",
+        "demand": 81
+    },
+    {
+        "id": 109,
+        "name": "PARCHE MASAJEADOR MARIPOSA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "AYUDA A RELAJAR LOS MÚSCULOS Y REDUCIR EL DOLOR. IDEAL PARA: CUELLO, ESPALDA Y CINTURA",
+        "image": "images/04. ELECTRONICOS/109.png",
+        "demand": 82
+    },
+    {
+        "id": 110,
+        "name": "CAÑO CALENTADOR ELÉCTRICO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "MUY FACIL DE INSTALAR",
+        "image": "images/06. HOGAR/110.png",
+        "demand": 83
+    },
+    {
+        "id": 111,
+        "name": "ROPERO DOS CUERPOS",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "DE FÁCIL INSTALACIÓN",
+        "image": "images/06. HOGAR/111.png",
+        "demand": 84
+    },
+    {
+        "id": 112,
+        "name": "SIERRA ELÉCTRICA INALÁMBRICA 24V",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "RECARGABLE PORTÁTIL",
+        "image": "images/05. HERRAMIENTAS/112.png",
+        "demand": 85
+    },
+    {
+        "id": 113,
+        "name": "BURLETE PARA PUERTA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "COLORES VARIADOS",
+        "image": "images/06. HOGAR/113.png",
+        "demand": 86
+    },
+    {
+        "id": 114,
+        "name": "CORRECTOR DE POSTURA CON VARILLAS",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "TALLAS:L-XL- XXL -XXXL",
+        "image": "images/03. CUIDADO_PERSONAL/114.png",
+        "demand": 87
+    },
+    {
+        "id": 115,
+        "name": "ALMOHADA GEL VISCOELÁSTICA ",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "MUY RELAJANTE",
+        "image": "images/03. CUIDADO_PERSONAL/115.png",
+        "demand": 88
+    },
+    {
+        "id": 116,
+        "name": "SUPER ASPIRADORA PARA AUTO",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "MEDIDA: 38CM",
+        "image": "images/02. ACESORIOS_VEHICULOS/116.png",
+        "demand": 89
+    },
+    {
+        "id": 117,
+        "name": "SHAMPOO TINTE COLORANTE",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "DIVERSOS COLORES",
+        "image": "images/03. CUIDADO_PERSONAL/117.png",
+        "demand": 90
+    },
+    {
+        "id": 118,
+        "name": "ENCENDEDOR DE COCINA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "RECARGABLE FLEXIBLE",
+        "image": "images/06. HOGAR/118.png",
+        "demand": 91
+    },
+    {
+        "id": 119,
+        "name": " ORGANIZADOR DE PLATOS CON TAPA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/119.png",
+        "demand": 92
+    },
+    {
+        "id": 120,
+        "name": "ESTANTE APILABLE MULTIFUNCIONAL ",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/120.png",
+        "demand": 93
+    },
+    {
+        "id": 121,
+        "name": "PERCHERO ESQUINERO ZAPATERO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/06. HOGAR/121.png",
+        "demand": 94
+    },
+    {
+        "id": 122,
+        "name": "CINTA KINESIÓLOGICA TAPE",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "REGULA EL FLUJOS ANGUÍNEO EN EL MUSCULO",
+        "image": "images/03. CUIDADO_PERSONAL/122.png",
+        "demand": 95
+    },
+    {
+        "id": 123,
+        "name": "ROPERO 4 CUERPOS",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "VARIEDAD DE COLORES MEDIDA: 170X45X170CM",
+        "image": "images/06. HOGAR/123.png",
+        "demand": 96
+    },
+    {
+        "id": 124,
+        "name": "BOMBA PARA GASOLINA ",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/05. HERRAMIENTAS/124.png",
+        "demand": 97
+    },
+    {
+        "id": 125,
+        "name": "KIT CORTA PELO DE MASCOTA",
+        "category": "MASCOTAS",
+        "price": 200,
+        "description": "MAQUINA PROFESIONAL INALÁMBRICA RECARGABLE",
+        "image": "images/07. MASCOTAS/125.png",
+        "demand": 98
+    },
+    {
+        "id": 126,
+        "name": "MINI AIRE ACONDICIONADO PORTÁTIL",
+        "category": "VERANO",
+        "price": 200,
+        "description": "VIERTA AGUA EN EL TANQUE, CONÉCTELO Y DISFRUTE",
+        "image": "images/11. VERANO/126.png",
+        "demand": 99
+    },
+    {
+        "id": 127,
+        "name": "ESTERILIZADOR DE CEPILLOS",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "CON DISPENSADOR DE PASTA, INCLUYE KIT DE INSTALACIÓN",
+        "image": "images/06. HOGAR/127.png",
+        "demand": 100
+    },
+    {
+        "id": 128,
+        "name": "PARCHE PARA DOLOR",
+        "category": "CUIDADO PERSONAL",
+        "price": 3.9,
+        "description": "ALIVIA EL DOLOR",
+        "image": "images/03. CUIDADO_PERSONAL/128.png",
+        "demand": 101
+    },
+    {
+        "id": 129,
+        "name": "DRONE K13 Y E99 PRO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "TOMAS PANORÁMICAS DE FOTOS Y VIDEOS CON SOPORTE DE ALTURA",
+        "image": "images/04. ELECTRONICOS/129.png",
+        "demand": 102
+    },
+    {
+        "id": 130,
+        "name": "KIT DE FOCOS PARA ESPEJO",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "10 FOCOS LED 3TONOSDE LUCES",
+        "image": "images/04. ELECTRONICOS/130.png",
+        "demand": 103
+    },
+    {
+        "id": 131,
+        "name": "MANGUERA EXPANDIBLE DE 30 METROS",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "COLOR VERDE Y AZUL",
+        "image": "images/05. HERRAMIENTAS/131.png",
+        "demand": 104
+    },
+    {
+        "id": 132,
+        "name": "CINTA RELOJ DE ARENA",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "SUAVE Y AJUSTABLE",
+        "image": "images/03. CUIDADO_PERSONAL/132.png",
+        "demand": 105
+    },
+    {
+        "id": 133,
+        "name": "TALADRO DESTORNILLADOR 21V",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "DOBLE BATERIA INALÁMBRICO MULTIUSO KIT COMPLETO",
+        "image": "images/05. HERRAMIENTAS/133.png",
+        "demand": 106
+    },
+    {
+        "id": 134,
+        "name": "CINTA MÁGICA FAST TAPE",
+        "category": "HERRAMIENTAS",
+        "price": 200,
+        "description": "IDEAL PARA PLÁSTICO, PVC, METAL, MADERA, ETC AISLAMIENTO ELÉCTRICO",
+        "image": "images/05. HERRAMIENTAS/134.png",
+        "demand": 107
+    },
+    {
+        "id": 135,
+        "name": "CINTA DOBLE CONTACTO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "COLOR TRANSPARENTE PEGA CUALQUIER OBJETO",
+        "image": "images/06. HOGAR/135.png",
+        "demand": 108
+    },
+    {
+        "id": 136,
+        "name": "TRIMMER",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "INALÁMBRICA Y RECARGABLE",
+        "image": "images/04. ELECTRONICOS/136.png",
+        "demand": 109
+    },
+    {
+        "id": 137,
+        "name": "COBERTOR DE MOTO",
+        "category": "ACCESORIOS VEHICULOS",
+        "price": 200,
+        "description": "MEDIDAS:1 .30mX 2.30",
+        "image": "images/02. ACESORIOS_VEHICULOS/137.png",
+        "demand": 110
+    },
+    {
+        "id": 138,
+        "name": "PROYECTOR PARLANTE CON LUCES",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "CREA UN AMBIENTE FESTIVO Y VIBRANTE",
+        "image": "images/04. ELECTRONICOS/138.png",
+        "demand": 111
+    },
+    {
+        "id": 139,
+        "name": "LENTES DE VISIÓN NOCTURNA",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "PROTECCIÓN DE LA VISTA",
+        "image": "images/03. CUIDADO_PERSONAL/139.png",
+        "demand": 112
+    },
+    {
+        "id": 140,
+        "name": "FOCO SOLAR TIPO CAMARA",
+        "category": "ELECTRONICOS",
+        "price": 200,
+        "description": "PRESENTACION EN CAJA",
+        "image": "images/04. ELECTRONICOS/140.png",
+        "demand": 113
+    },
+    {
+        "id": 141,
+        "name": "CHANO DESENGRASANTE 500GR",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "REMUEVE LA GRASA MÁS RESISTENTE",
+        "image": "images/06. HOGAR/141.png",
+        "demand": 114
+    },
+    {
+        "id": 142,
+        "name": "LIMPIADOR DE INODORO",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "COMBATE LA SUCIEDAD Y EL SARRO",
+        "image": "images/06. HOGAR/142.png",
+        "demand": 115
+    },
+    {
+        "id": 143,
+        "name": "HADA VOLADORA",
+        "category": "NIÑOS",
+        "price": 200,
+        "description": "HERMOSAMUÑECA VOLADORA",
+        "image": "images/08. NIÑOS/143.png",
+        "demand": 116
+    },
+    {
+        "id": 144,
+        "name": "ROPERO ARMABLE DE 3 CUERPOS",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "MEDIDAS:120 x45x170cm",
+        "image": "images/06. HOGAR/144.png",
+        "demand": 117
+    },
+    {
+        "id": 145,
+        "name": "CASCO CON LUCES ",
+        "category": "NIÑOS",
+        "price": 200,
+        "description": "COLORES Y MODELOS VARIADOS",
+        "image": "images/08. NIÑOS/145.png",
+        "demand": 118
+    },
+    {
+        "id": 146,
+        "name": "PASTILLAS PARA LAVADORA",
+        "category": "HOGAR",
+        "price": 200,
+        "description": "CANTIDAD12 PASTILLAS",
+        "image": "images/06. HOGAR/146.png",
+        "demand": 119
+    },
+    {
+        "id": 147,
+        "name": "SET DE HIGIENE PARA BEBE",
+        "category": "NIÑOS",
+        "price": 200,
+        "description": "6 PIEZAS PRÁCTICO Y PORTATIL",
+        "image": "images/08. NIÑOS/147.png",
+        "demand": 120
+    },
+    {
+        "id": 148,
+        "name": "ASPIRADOR NASAL Y OIDO PARA BEBE",
+        "category": "NIÑOS",
+        "price": 200,
+        "description": "PRÁCTICO Y PORTATIL",
+        "image": "images/08. NIÑOS/148.png",
+        "demand": 121
+    },
+    {
+        "id": 149,
+        "name": "LIPO CREAM REDUCTORA CORPORAL",
+        "category": "CUIDADO PERSONAL",
+        "price": 200,
+        "description": "QUEMADORD E GRASA",
+        "image": "images/03. CUIDADO_PERSONAL/149.png",
+        "demand": 122
     }
 ]
