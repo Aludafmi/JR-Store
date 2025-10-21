@@ -4,18 +4,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>JR Store - Tienda online</title>
+  <title>  - Tienda online</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="container">
     <header>
+      <button id="catToggle" class="cat-toggle" aria-label="Abrir categorías" aria-expanded="false">☰</button>
       <div class="brand">
         <img id="logo" src="images/logo 3.png" alt="JR Store logo">
         <div>
-          <h1>JR Store</h1>
-          <div class="top-contact"><strong> "Tu tienda online de confianza."</strong></div>
+          <h1 id="brandName"> </h1>
+          <div id="slogan" class="top-contact"><strong id="sloganText">Tu tienda online de confianza.</strong></div>
         </div>
       </div>
       <div class="header-right">
@@ -24,19 +25,18 @@
       </div>
     </header>
 
-    <main class="hero">
+    <main class="hero" id="hero1">
       <section class="left">
         <div class="hero-top">
-          <div>
-            <h2>Bienvenidos a JR Store</h2>
-            <p class="muted">
-              Tecnología, hogar, moda y más, con envíos rápidos a nivel nacional.<br>
-               ¡Compra fácil, recibe seguro!</p>
+          <div class="Nombre-bienvenida">
+            <h2 id="welcomeTitle"> </h2>
+            <p id="welcomeText" class="muted">
+              </p>
           </div>
-        <nav class="main-nav">
-            <a href="#carouselTrack">Ver Productos Estrella</a>
+          <nav class="main-nav">
+            <a id="starBtn" href="#carouselTrack">Ver Productos Estrella</a>
           </nav>
-        </div>  
+        </div>
 
         <div class="search">
           <input id="search" placeholder="Buscar producto, categoría o marca">
@@ -56,8 +56,8 @@
       </section>
 
       <aside class="carousel">
-        <h2>Productos Estrella</h2>
-        <div class="muted small">Top 10 productos más demandados</div>
+        <h2 id="carouselTitle">Productos Estrella</h2>
+        <div class="muted small">Top 8 productos más demandados</div>
         <div id="carouselTrack" class="carousel-track" aria-live="polite"></div>
         <div class="carousel-controls">
           <!-- Los puntos se insertarán aquí desde JavaScript -->
@@ -67,14 +67,13 @@
 
     <footer id="contacto">
       <div class="footer-left">
-        <strong>JR Store</strong>
-        <div class="contact">Av. Abancay 1054, Centro Comercial Unicachi - CERCADO DE LIMA</div>
-        <div class="contact">WhatsApp: <strong>+51 944 952 234</strong></div>
+        <strong id="footerBrand">JR Store</strong>
+        <div class="contact" id="footerAddress">Av. Abancay 1054, Centro Comercial Unicachi - CERCADO DE LIMA</div>
+        <div class="contact">WhatsApp: <strong id="footerPhone">+51 944 952 234</strong></div>
       </div>
       <div class="footer-right">
-        <a href="#logo">🏠 Inicio</a>
+        <a id="home Btn" href="#">🏠 Inicio</a>
       </div>
-
     </footer>
     <p class="footer-copy">© 2025 JR Store. Todos los derechos reservados.</p>
 

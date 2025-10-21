@@ -1,11 +1,14 @@
 :root {
-    --accent: #ff6b00;
+    --accent: #0749d5d3;
+    ;
     --bg: #f7f7f8;
     --card: #ffffff;
     --text: #222;
     --muted: #666;
     --max-width: 1100px;
     --radius: 10px;
+    --header-height: 72px;
+    /* altura del header para sticky */
 }
 
 * {
@@ -22,7 +25,7 @@ body {
 
 .container {
     max-width: var(--max-width);
-    margin: 28px auto;
+    margin: 15px auto;
     padding: 0 16px
 }
 
@@ -30,7 +33,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 12px
+    gap: 12px;
+    margin: 50ps;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--bg);
 }
 
 .brand {
@@ -95,10 +103,10 @@ header {
     font-weight: 600;
     text-decoration: none;
     display: inline-block
-} 
+}
 
 
-.compra-whatsapp{
+.compra-whatsapp {
     width: 100%;
     background-color: #2585d3;
     color: #fff;
@@ -128,7 +136,7 @@ header {
 }
 
 .left {
-    padding: 18px;
+    padding: 5px;
     background: transparent
 }
 
@@ -177,19 +185,30 @@ header {
     cursor: pointer
 }
 
+
+#categorias h3,
+#productos h3 {
+    margin: 5px 15px;
+    padding: 5px 0px
+}
+
+
+
 .categories-wrap {
-    display: flex;
-    gap: 8px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
+    gap: 2px;
     flex-wrap: wrap;
-    margin-top: 8px
+
 }
 
 .categories-wrap button {
-    padding: 8px 12px;
+    padding: 8px;
     border-radius: 8px;
     border: 1px solid #eee;
     background: #fff;
-    cursor: pointer
+    cursor: pointer;
+    font-size: 10px
 }
 
 .grid {
@@ -203,11 +222,12 @@ header {
     background: var(--card);
     padding: 12px;
     border-radius: 10px;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.04);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.04);
     display: flex;
     flex-direction: column;
     height: 100%;
-    text-align: center; /* Centrar todo el contenido */
+    text-align: center;
+    /* Centrar todo el contenido */
 }
 
 .card img {
@@ -246,7 +266,8 @@ header {
     margin-top: auto;
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Aumentar espacio entre elementos */
+    gap: 12px;
+    /* Aumentar espacio entre elementos */
 }
 
 .price {
@@ -261,7 +282,7 @@ header {
     background: var(--card);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
     margin-top: 24px;
 }
 
@@ -280,7 +301,8 @@ header {
 }
 
 .carousel-item {
-    min-width: 240px; /* 1.5x más grande */
+    min-width: 240px;
+    /* 1.5x más grande */
     border-radius: 8px;
     background: #fafafa;
     padding: 12px;
@@ -290,7 +312,8 @@ header {
 
 .carousel-item img {
     width: 100%;
-    height: 165px; /* 1.5x más grande */
+    height: 165px;
+    /* 1.5x más grande */
     object-fit: cover;
     border-radius: 6px;
 }
@@ -312,7 +335,7 @@ header {
 }
 
 .carousel-dot.active {
-    background:rgb(255, 4, 0)
+    background: rgb(255, 4, 0)
 }
 
 footer {
@@ -352,10 +375,19 @@ footer a {
     padding: 10px;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.03);
 }
-.pagination .pagi-left { display:flex; gap:8px; align-items:center; }
-.pagination .pagi-info { color: var(--muted); font-size: .95rem; }
+
+.pagination .pagi-left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.pagination .pagi-info {
+    color: var(--muted);
+    font-size: .95rem;
+}
 
 
 .lightbox {
@@ -366,13 +398,19 @@ footer a {
     justify-content: center;
     z-index: 1200;
 }
-.lightbox.open { display: flex; animation: fadeIn .18s ease-in; }
+
+.lightbox.open {
+    display: flex;
+    animation: fadeIn .18s ease-in;
+}
+
 .lightbox-backdrop {
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(3px);
 }
+
 .lightbox-content {
     position: relative;
     max-width: 92%;
@@ -380,10 +418,11 @@ footer a {
     z-index: 2;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 18px 50px rgba(12,12,12,0.6);
+    box-shadow: 0 18px 50px rgba(12, 12, 12, 0.6);
     transform: translateY(-8px);
-    animation: popIn .25s cubic-bezier(.2,.9,.2,1);
+    animation: popIn .25s cubic-bezier(.2, .9, .2, 1);
 }
+
 .lightbox-img {
     display: block;
     width: 100%;
@@ -392,32 +431,53 @@ footer a {
     object-fit: contain;
     background: #111;
 }
+
 .lightbox-close {
     position: absolute;
     right: 8px;
     top: 8px;
     z-index: 3;
     border: none;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     width: 36px;
     height: 36px;
     border-radius: 50%;
     font-size: 22px;
     cursor: pointer;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
 
 
-@keyframes popIn { from { transform: translateY(-20px) scale(.98); opacity:0 } to { transform: translateY(0) scale(1); opacity:1 } }
-@keyframes fadeIn { from { opacity:0 } to { opacity:1 } }
+@keyframes popIn {
+    from {
+        transform: translateY(-20px) scale(.98);
+        opacity: 0
+    }
+
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 
 /* Responsive: 2 productos por fila en móviles */
 @media(max-width:600px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
-        gap: 12px;
+        gap: 10px;
     }
+
     .card img {
         height: 120px;
     }
@@ -428,7 +488,12 @@ footer a {
     header {
         flex-direction: column;
         align-items: flex-start;
-        gap: 5px
+        gap: 5px;
+        height: 220px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: var(--card)
     }
 
     .brand {
@@ -438,40 +503,54 @@ footer a {
         align-items: center;
         text-align: center;
         justify-content: center;
+        
     }
 
     .brand img {
-        width: 135px;
-        height: 135px;
+        width: 175px;
+        height: 175px;
         margin: 10px;
+        position: relative;
+        top: 10 px;
+
     }
 
     .brand h1 {
-        font-size: 2.55rem;
-        margin: 10px;
+        font-size: 2.85rem;
+        margin: 5px;
         text-align: start;
     }
 
-    .brand .top-contact {
-        font-size: 0.80rem;
-        margin: 10px;
+    .brand .top-contact strong {
+        font-size: 0.75rem;
+        margin: 0px;
         text-align: start;
+    }
+
+    .brand div {
+        position: relative;
+        top: -20px;
     }
 
     .header-right {
         width: 100%;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        position: relative;
+        gap: 0px;
+        top: -90px;
+        right: -95px;
     }
 
     .header-right .top-contact2 {
         text-align: center;
-        font-size: 1.350rem;
+        font-size: 1.10rem;
     }
 
+
     .hero {
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
 
     .hero .hero-top {
@@ -508,7 +587,7 @@ footer a {
         padding: 5px;
     }
 
-    footer .footer-left { 
+    footer .footer-left {
         font-size: 14px;
     }
 
@@ -520,9 +599,9 @@ footer a {
         align-items: center;
         justify-content: center;
         font-size: 14px;
-     }
-     
-      footer .footer-right a {
+    }
+
+    footer .footer-right a {
         font-size: 15px;
         margin: 5px;
     }
@@ -532,5 +611,149 @@ footer a {
         margin-top: 16px
     }
 
-  
+
 }
+
+/* Botón toggle de categorías (visible solo en móvil) */
+.cat-toggle {
+    display: none;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 120;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.90rem;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(2, 94, 254, 0.649);
+}
+
+/* Drawer móvil para categorías */
+.categories-wrap {
+    transition: transform .28s ease, opacity .28s ease;
+}
+
+.categories-wrap.open {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Ocultar el drawer por defecto en móvil (se mostrará con .open) */
+@media (max-width: 600px) {
+    .cat-toggle {
+        display: block;
+    }
+
+    .categories-wrap {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        top: calc(var(--header-height, 72px) + 8px);
+        /* debajo del header */
+        background: #068ad7ad;
+        padding: 12px;
+        border-radius: 10px;
+        box-shadow: 0 12px 28px rgba(2, 66, 203, 0.895);
+        transform: translateY(-8px) scaleY(0.98);
+        opacity: 0;
+        max-height: 52vh;
+        overflow: auto;
+        z-index: 110;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 8px;
+    }
+
+    .categories-wrap.open {
+        transform: translateY(0) scaleY(1);
+        opacity: 1;
+    }
+
+ 
+    /* 
+    Mantener el botón "Ver Productos Estrella" estático debajo del header
+    
+    .main-nav {
+        position: sticky;
+        top: var(--header-height, 72px);
+        z-index: 100;
+        margin-top: 0px;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    .main-nav a {
+        background: var(--accent);
+        color: #fff;
+        padding: 10px 14px;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        text-decoration: none;
+        display: inline-block;
+    } 
+
+    .search {
+        background: var(--bg);
+        padding: 6px 0;
+    }
+    */
+
+
+
+
+    #categorias h3 {
+        display: none;
+    }
+
+    /* ocultar título categorías en móvil */
+    .hero-top {
+        gap: 4px;
+    }
+
+    .categories-wrap {
+        position: fixed;
+        left: 10px;
+        right: 10px;
+        top: calc(var(--header-height, 72px) + 8px);
+    }
+}
+
+/* mejorar interacción drag del carrusel */
+.carousel-track {
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: grab;
+}
+
+.carousel-track.dragging {
+    cursor: grabbing;
+}
+
+/* puntos indicativos: tamaño y contraste */
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.carousel-dot.active {
+    background: var(--accent);
+}
+
+/* mantener botón toggle visible en móvil */
+.cat-toggle {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .cat-toggle {
+        display: block;
+    }
+}
+
+/* ...resto del CSS existente... */
