@@ -98,7 +98,13 @@ function uniqueCategories(list) {
   return ['TODOS', ...Array.from(set)];
 }
 
-// render categorías y persistir botón activo
+// Actualizar título actual de categoría
+function updateCurrentCategory(category) {
+    const currentCat = document.getElementById('currentCategory');
+    if (currentCat) currentCat.textContent = category;
+}
+
+// Modificar renderCategories para hacer scroll a productos al seleccionar
 function renderCategories() {
   const cats = uniqueCategories(PRODUCTS);
   categoriesWrap.innerHTML = '';
@@ -110,11 +116,15 @@ function renderCategories() {
     btn.addEventListener('click', () => {
       currentCategory = c;
       currentPage = 1;
+      // marca visual persistente
       Array.from(categoriesWrap.children).forEach(ch => ch.classList.remove('active'));
       btn.classList.add('active');
       renderProductsPage();
-      // cerrar drawer en móvil
-      if (window.innerWidth <= 600) categoriesWrap.classList.remove('open');
+      // desplazar a sección Productos
+      const productosEl = document.getElementById('productos');
+      if (productosEl) productosEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // si estamos en mobile cerrar el drawer automáticamente
+      if (document.documentElement.clientWidth <= 600) categoriesWrap.classList.remove('open');
     });
     categoriesWrap.appendChild(btn);
   });
@@ -165,22 +175,81 @@ function renderProductsPage() {
   renderPaginationControls(currentPage, totalPages);
 }
 
+// Modificar renderPaginationControls para usar flechas y números
 function renderPaginationControls(page, totalPages) {
-  if (!paginationWrap) return;
-  paginationWrap.innerHTML = `
-    <div class="pagi-left">
-      <button id="pagePrev" class="ctrl">Anterior</button>
-      <button id="pageNext" class="ctrl">Siguiente</button>
-    </div>
-    <div class="pagi-info">Página ${page} de ${totalPages} — ${getFilteredProducts().length} resultados</div>
-  `;
-  const pagePrev = document.getElementById('pagePrev');
-  const pageNext = document.getElementById('pageNext');
-  pagePrev.disabled = (page <= 1);
-  pageNext.disabled = (page >= totalPages);
-  pagePrev.addEventListener('click', () => { currentPage = Math.max(1, currentPage - 1); renderProductsPage(); document.getElementById('productos').scrollIntoView({behavior:'smooth'}); });
-  pageNext.addEventListener('click', () => { currentPage = Math.min(totalPages, currentPage + 1); renderProductsPage(); document.getElementById('productos').scrollIntoView({behavior:'smooth'}); });
+    if (!paginationWrap) return;
+    
+    let numbers = '';
+    const maxVisible = 5;
+    let start = Math.max(1, Math.min(page - Math.floor(maxVisible/2), totalPages - maxVisible + 1));
+    let end = Math.min(totalPages, start + maxVisible - 1);
+    
+    if (end - start + 1 < maxVisible) {
+        start = Math.max(1, end - maxVisible + 1);
+    }
+
+    for (let i = start; i <= end; i++) {
+        numbers += `<button class="${i === page ? 'active' : ''}" data-page="${i}">${i}</button>`;
+    }
+
+    paginationWrap.innerHTML = `
+        <button class="arrow" ${page <= 1 ? 'disabled' : ''} data-page="${page-1}">❮</button>
+        <div class="numbers">${numbers}</div>
+        <button class="arrow" ${page >= totalPages ? 'disabled' : ''} data-page="${page+1}">❯</button>
+    `;
+
+    // Event listeners para botones de página
+    paginationWrap.querySelectorAll('button[data-page]').forEach(btn => {
+        if (!btn.disabled) {
+            btn.addEventListener('click', () => {
+                currentPage = parseInt(btn.dataset.page);
+                renderProductsPage();
+                document.getElementById('productos').scrollIntoView({behavior:'smooth'});
+            });
+        }
+    });
 }
+
+// Actualizar meta al cargar JSON
+fetch(PRODUCTS_JSON)
+    .then(r => r.ok ? r.json() : Promise.reject('Error loading JSON'))
+    .then(data => {
+        if (data && Array.isArray(data.products)) {
+            PRODUCTS = data.products;
+            META = Object.assign(META, data.meta || {});
+        } else if (Array.isArray(data)) {
+            PRODUCTS = data;
+        } else {
+            PRODUCTS = [];
+        }
+
+        // inyectar meta en DOM
+        try {
+            document.getElementById('logo').src = META.logo || 'images/logo 3.png';
+            document.getElementById('brandName').textContent = META.name || 'Tienda';
+            document.getElementById('sloganText').textContent = META.slogan || '';
+            document.getElementById('welcomeTitle').textContent = META.welcomeTitle || (`Bienvenidos a ${META.name || ''}`);
+            document.getElementById('welcomeText').innerHTML = META.welcome || '';
+            document.getElementById('footerAddress').textContent = META.address || '';
+            document.getElementById('footerPhone').textContent = META.phone || '';
+            document.getElementById('footerBrand').textContent = META.name || '';
+            document.querySelector('.footer-copy').textContent = META.copy || `© ${new Date().getFullYear()} ${META.name}. Todos los derechos reservados.`;
+            document.title = data.meta?.name ? `${data.meta.name} - Tienda online` : 'Tienda online';
+            // actualizar waHeader
+            const waHeader = document.getElementById('waHeader');
+            if (waHeader && META.phone) waHeader.href = `https://wa.me/${META.phone.replace(/\D/g,'')}`;
+        } catch (e) { console.warn(e); }
+
+        // orden aleatorio en cada carga
+        DAILY_ORDERED = shuffle(PRODUCTS);
+        renderCategories();
+        renderProductsPage();
+        renderCarousel();
+    })
+    .catch(err => {
+        console.error(err);
+        if (productGrid) productGrid.innerHTML = '<div class="muted">Error cargando products.json</div>';
+    });
 
 // LIGHTBOX (centralizado)
 const lightbox = document.createElement('div');
@@ -370,8 +439,21 @@ function startCarouselAuto() {
 function stopCarouselAuto() { if (carouselInterval) { clearInterval(carouselInterval); carouselInterval = null; } }
 
 // eventos UI: búsqueda, toggle categorias, starBtn, homeBtn
-searchBtn.addEventListener('click', ()=> { currentQuery = (searchInput.value||'').toLowerCase().trim(); currentPage=1; renderProductsPage(); });
-searchInput.addEventListener('input', ()=> { currentQuery = (searchInput.value||'').toLowerCase().trim(); currentPage=1; renderProductsPage(); });
+searchBtn.addEventListener('click', () => {
+  currentQuery = (searchInput.value || '').toLowerCase().trim();
+  currentPage = 1;
+  renderProductsPage();
+  const productosEl = document.getElementById('productos');
+  if (productosEl) productosEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+});
+
+// Opcional: Enter en el input ejecuta búsqueda (UX)
+searchInput.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    e.preventDefault();
+    searchBtn.click();
+  }
+});
 
 if (catToggleBtn) {
   catToggleBtn.addEventListener('click', ()=> {
@@ -382,11 +464,13 @@ if (catToggleBtn) {
 
 // starBtn: scroll a titulo de carousel
 if (starBtn) {
-  starBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    const title = document.getElementById('carouselTitle');
-    if (title) title.scrollIntoView({behavior:'smooth', block:'start'});
-  });
+    starBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const carousel = document.getElementById('carousel-section');
+        if (carousel) {
+            carousel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
 }
 
 // homeBtn: refrescar la página

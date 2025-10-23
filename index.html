@@ -4,38 +4,39 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>  - Tienda online</title>
+  <title> - Tienda online</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <div class="container">
     <header>
-      <button id="catToggle" class="cat-toggle" aria-label="Abrir categorías" aria-expanded="false">☰</button>
       <div class="brand">
         <img id="logo" src="images/logo 3.png" alt="JR Store logo">
-        <div>
-          <h1 id="brandName"> </h1>
-          <div id="slogan" class="top-contact"><strong id="sloganText">Tu tienda online de confianza.</strong></div>
+        <div class="nombslog">
+          <div>
+            <h1 id="brandName"> </h1>
+            <div id="slogan" class="top-contact"><strong id="sloganText"></strong></div>
+          </div>
+          <div class="header-right">
+            <a class="whatsapp" id="waHeader" href="https://wa.me/51944952234" target="_blank"
+              rel="noopener">WhatsApp</a>
+            <div class="top-contact2"> <strong>Contactanos</strong></div>
+          </div>
         </div>
       </div>
-      <div class="header-right">
-        <div class="top-contact2"> <strong>Contactanos</strong></div>
-        <a class="whatsapp" id="waHeader" href="https://wa.me/51944952234" target="_blank" rel="noopener">WhatsApp</a>
-      </div>
+
+      <button id="catToggle" class="cat-toggle" aria-label="Abrir categorías" aria-expanded="false">☰ CATEGORIAS
+      </button>
     </header>
 
     <main class="hero" id="hero1">
       <section class="left">
         <div class="hero-top">
           <div class="Nombre-bienvenida">
-            <h2 id="welcomeTitle"> </h2>
-            <p id="welcomeText" class="muted">
-              </p>
+            <h2 id="welcomeTitle"></h2>
+            <p id="welcomeText" class="muted"></p>
           </div>
-          <nav class="main-nav">
-            <a id="starBtn" href="#carouselTrack">Ver Productos Estrella</a>
-          </nav>
         </div>
 
         <div class="search">
@@ -43,26 +44,34 @@
           <button id="searchBtn">Buscar</button>
         </div>
 
+        
         <section id="categorias">
-          <h3>Categorías</h3>
+          <h3 class="cat-title">Categorías</h3>
           <div id="categoriesWrap" class="categories-wrap"></div>
         </section>
 
+        
+        <aside class="carousel" id="carousel-section">
+          <h2 id="carouselTitle">Productos Estrella</h2>
+          <div class="muted small">Top 8 productos más demandados</div>
+          <div id="carouselTrack" class="carousel-track" aria-live="polite"></div>
+          <div class="carousel-controls"></div>
+        </aside>
+
         <section id="productos">
-          <h3>Productos</h3>
+          <div class="category-title">
+            <h3>Productos</h3>
+            <span class="separator">/</span>
+            <span class="current" id="currentCategory">Todos</span>
+          </div>
           <div id="productGrid" class="grid"></div>
           <div id="pagination" class="pagination"></div>
         </section>
-      </section>
 
-      <aside class="carousel">
-        <h2 id="carouselTitle">Productos Estrella</h2>
-        <div class="muted small">Top 8 productos más demandados</div>
-        <div id="carouselTrack" class="carousel-track" aria-live="polite"></div>
-        <div class="carousel-controls">
-          <!-- Los puntos se insertarán aquí desde JavaScript -->
-        </div>
-      </aside>
+        <nav class="main-nav bottom-nav">
+          <a id="starBtn" href="#carousel-section">Ver Productos Estrella</a>
+        </nav>
+      </section>
     </main>
 
     <footer id="contacto">

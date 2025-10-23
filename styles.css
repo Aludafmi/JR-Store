@@ -1,3 +1,4 @@
+/* Ajustes generales */
 :root {
     --accent: #0749d5d3;
     ;
@@ -7,8 +8,18 @@
     --muted: #666;
     --max-width: 1100px;
     --radius: 10px;
-    --header-height: 72px;
-    /* altura del header para sticky */
+    --header-height: 240px;
+    /* Ajustado para considerar el header completo + botón categorías */
+}
+
+/* Correcciones para el container principal */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 12px;
+    width: 100%;
+    overflow-x: hidden;
+    /* Prevenir scroll horizontal */
 }
 
 * {
@@ -25,7 +36,7 @@ body {
 
 .container {
     max-width: var(--max-width);
-    margin: 15px auto;
+    margin: 10px auto;
     padding: 0 16px
 }
 
@@ -47,6 +58,10 @@ header {
     gap: 12px
 }
 
+.nombslog {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 .brand img {
     width: 185px;
@@ -76,11 +91,14 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px
+    gap: 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .top-contact2 {
-    font-size: 1.55rem;
+    font-size: 1.05rem;
     color: var(--muted)
 }
 
@@ -96,8 +114,8 @@ header {
     padding: 10px 10px 10px 60px;
     border: 5px double #fffffd;
     border-radius: 20px;
-    box-shadow: 0 0px 30px rgba(44, 235, 10, 0.433);
-    text-shadow: 0 0 5px rgb(249, 247, 247), 0 0 15px rgb(117, 204, 153), 0 0 30px rgb(44, 201, 52), 0 0 50px rgb(58, 231, 35);
+    box-shadow: 10 0px 30px rgba(44, 235, 10, 0.433);
+    text-shadow: 10 0 5px rgb(249, 247, 247), 0 0 15px rgb(117, 204, 153), 0 0 30px rgb(44, 201, 52), 0 0 50px rgb(58, 231, 35);
     border-width: 5px;
     font-size: 1.25rem;
     font-weight: 600;
@@ -108,6 +126,8 @@ header {
 
 .compra-whatsapp {
     width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
     background-color: #2585d3;
     color: #fff;
     padding: 10px 10px 10px 10px;
@@ -281,9 +301,9 @@ header {
 .carousel {
     background: var(--card);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: var(--radius);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-    margin-top: 24px;
+    margin: 20px 0;
 }
 
 .carousel-track {
@@ -449,6 +469,205 @@ footer a {
 
 
 
+/* Mejoras UI */
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+}
+
+.category-title h3 {
+    margin: 0;
+}
+
+.category-title .separator {
+    color: var(--muted);
+    font-size: 1.2rem;
+}
+
+.category-title .current {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Estilo botón categoría activa */
+.cat-btn.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+/* Mejora estética botón comprar en lightbox */
+.lightbox .lb-buy {
+    display: inline-block;
+    background: linear-gradient(45deg, #00ff5e, #128C7E);
+    color: white;
+    padding: 10px 28px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+    margin: 10px 150px 10px 85px;
+    font-size: 1.1rem;
+    width: 50%;
+    min-width: 200px;
+}
+
+.lightbox .lb-buy:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(72, 37, 211, 0.4);
+}
+
+/* Estilo números paginación */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 20px 0;
+}
+
+.pagination .numbers {
+    display: flex;
+    gap: 4px;
+    margin: 0 12px;
+}
+
+.pagination button {
+    min-width: 36px;
+    height: 36px;
+    border: 1px solid #eee;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    color: var(--text);
+}
+
+.pagination button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination .arrow {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+/* Ajustes para el carrusel y navegación */
+.carousel {
+    background: var(--card);
+    padding: 20px;
+    border-radius: var(--radius);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    margin: 20px 0;
+}
+
+/* Botón nav inferior */
+.bottom-nav {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.bottom-nav a {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--accent);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.bottom-nav a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(7, 73, 213, 0.2);
+}
+
+/* Mejoras visuales generales */
+.whatsapp {
+    width: fit-content;
+}
+
+.compra-whatsapp {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* Eliminar duplicados y estilos conflictivos */
+.main-nav,
+.categories-wrap,
+.category-title,
+.pagination {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carousel-track {
+    touch-action: pan-y;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: grab;
+}
+
+.carousel-track.dragging {
+    cursor: grabbing;
+}
+
+/* puntos indicativos: tamaño y contraste */
+.carousel-dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #ddd;
+}
+
+.carousel-dot.active {
+    background: var(--accent);
+}
+
+/* mantener botón toggle visible en móvil */
+.cat-toggle {
+    display: none;
+}
+
+/* Asegurar que el título de Categorías se muestre en todas las resoluciones */
+#categorias .cat-title,
+#categorias h3,
+.cat-title {
+    display: block !important;
+    margin: 10px 0 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+/* Separación entre categorías y carrusel */
+#categorias {
+    margin-bottom: 10px;
+}
+
+.carousel {
+    margin-top: 6px;
+}
+
+
+
+
 @keyframes popIn {
     from {
         transform: translateY(-20px) scale(.98);
@@ -471,6 +690,178 @@ footer a {
     }
 }
 
+
+
+
+
+
+
+
+
+
+@media(max-width:950px) {
+    .container {
+        padding: 0 8px;
+        padding: 0 8px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    header {
+        padding: 8px;
+        margin: 0 -8px;
+        width: 100%;
+        flex-direction: column;
+        padding: 8px;
+        margin: 0 -8px;
+        width: calc(100% + 16px);
+    }
+
+     .brand .nombslog {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .brand img {
+        width: 180px;
+        height: 180px;
+        margin-right: 0;
+    }
+
+    .brand h1 {
+        font-size: 2.55rem;
+        text-align: start;
+        padding-left: 0px;
+        margin-top: 5px;
+    }
+
+    .top-contact,
+    .top-contact2 {
+        font-size: 1rem;
+    }
+
+    .header-right {
+        display: flex;
+        position: relative;
+      
+    }
+
+    /* Posicionar botón categorías dentro del header */
+    .cat-toggle {
+        position: absolute;
+        left: 10px;
+        top: 185px;
+        /* Ajustar según altura del header */
+        width: auto;
+        z-index: 120;
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        border-radius: 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Ajustes móviles */
+@media (max-width: 600px) {
+    .brand h1 {
+        font-size: 1.95rem;
+        margin-top: 15px;
+    }
+
+    .top-contact,
+    .top-contact2 {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+
+    /* Grid de productos */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 0;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    /* Ajuste botón categorías */
+    .cat-toggle {
+        position:sticky;
+        left: 8px;
+        right: 8px;
+        top: 200px;
+        width: calc(100% - 16px);
+        margin-bottom: 0px;
+        z-index: 100;
+        text-align: center;
+        display: grid;
+        background: var(--accent);
+        color: var(--bg);
+    }
+    
+
+    /* Drawer categorías */
+    .categories-wrap {
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        padding:15px;
+        top: 255px;
+        width: calc(95% - 16px);
+        margin: 0 auto;
+        display: none;
+    }
+
+    .categories-wrap.open {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        background: rgba(19, 111, 204, 0.678);
+    }
+
+
+
+    /* Carrusel ajustado */
+    .carousel {
+        margin: 12px -8px;
+        border-radius: 0;
+    }
+
+    .carousel-item {
+        min-width: 200px;
+    }
+
+    /* Footer ajustado */
+    footer {
+        margin: 12px -8px;
+        padding: 12px;
+        flex-direction: row;
+        text-align:start;
+    }
+
+    .footer-right {
+        margin-top: 12px;
+        margin-left: 10px;
+        text-align: center;
+    }
+
+    footer a {
+        margin-right: 0;
+    }
+}
+
 /* Responsive: 2 productos por fila en móviles */
 @media(max-width:600px) {
     .grid {
@@ -481,279 +872,40 @@ footer a {
     .card img {
         height: 120px;
     }
-}
 
-
-@media(max-width:900px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-        height: 220px;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        background: var(--card)
-    }
-
-    .brand {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        
-    }
-
-    .brand img {
-        width: 175px;
-        height: 175px;
-        margin: 10px;
-        position: relative;
-        top: 10 px;
-
-    }
-
-    .brand h1 {
-        font-size: 2.85rem;
-        margin: 5px;
-        text-align: start;
-    }
-
-    .brand .top-contact strong {
-        font-size: 0.75rem;
-        margin: 0px;
-        text-align: start;
-    }
-
-    .brand div {
-        position: relative;
-        top: -20px;
-    }
-
-    .header-right {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        gap: 0px;
-        top: -90px;
-        right: -95px;
-    }
-
-    .header-right .top-contact2 {
-        text-align: center;
-        font-size: 1.10rem;
-    }
-
-
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    .hero .hero-top {
-        width: 100%;
-        flex-direction: column;
-        gap: 5px;
-        margin-bottom: 20px;
-    }
-
-    .hero .hero-top h2 {
-        margin: 0;
-        padding: 5px;
-    }
-
-    .hero .hero-top p {
-        margin: 0;
-        padding: 5px;
-    }
-
-    .hero .hero-top nav {
-        display: flex;
-        width: 100%;
-        justify-content: end;
-    }
-
-    .hero .hero-top a {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
-
-    footer {
-        margin-top: 20px;
-        padding: 5px;
-    }
-
-    footer .footer-left {
-        font-size: 14px;
-    }
-
-
-    footer .footer-right {
-
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 14px;
-    }
-
-    footer .footer-right a {
-        font-size: 15px;
-        margin: 5px;
-    }
-
-    .carousel {
-        order: 2;
-        margin-top: 16px
-    }
-
-
-}
-
-/* Botón toggle de categorías (visible solo en móvil) */
-.cat-toggle {
-    display: none;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-    z-index: 120;
-    background: var(--accent);
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 10px;
-    font-size: 0.90rem;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(2, 94, 254, 0.649);
-}
-
-/* Drawer móvil para categorías */
-.categories-wrap {
-    transition: transform .28s ease, opacity .28s ease;
-}
-
-.categories-wrap.open {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-/* Ocultar el drawer por defecto en móvil (se mostrará con .open) */
-@media (max-width: 600px) {
-    .cat-toggle {
-        display: block;
-    }
-
-    .categories-wrap {
-        position: fixed;
-        left: 10px;
-        right: 10px;
-        top: calc(var(--header-height, 72px) + 8px);
-        /* debajo del header */
-        background: #068ad7ad;
-        padding: 12px;
-        border-radius: 10px;
-        box-shadow: 0 12px 28px rgba(2, 66, 203, 0.895);
-        transform: translateY(-8px) scaleY(0.98);
-        opacity: 0;
-        max-height: 52vh;
-        overflow: auto;
-        z-index: 110;
-        display: grid;
-        grid-template-rows: 1fr;
-        gap: 8px;
-    }
-
-    .categories-wrap.open {
-        transform: translateY(0) scaleY(1);
-        opacity: 1;
-    }
-
- 
-    /* 
-    Mantener el botón "Ver Productos Estrella" estático debajo del header
-    
-    .main-nav {
-        position: sticky;
-        top: var(--header-height, 72px);
-        z-index: 100;
-        margin-top: 0px;
-        background: transparent;
-        display: flex;
-        justify-content: center;
-    }
-    .main-nav a {
-        background: var(--accent);
-        color: #fff;
-        padding: 10px 14px;
-        border-radius: 10px;
-        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-        text-decoration: none;
-        display: inline-block;
-    } 
-
-    .search {
-        background: var(--bg);
-        padding: 6px 0;
-    }
-    */
-
-
-
-
-    #categorias h3 {
+    /* Ocultar título de categorías cuando está el toggle */
+    .cat-title {
         display: none;
     }
 
-    /* ocultar título categorías en móvil */
-    .hero-top {
-        gap: 4px;
+    /* Ajustar orden en móvil */
+    .carousel {
+        order: 1;
+        margin: 8px -8px;
+        border-radius: 0;
     }
 
-    .categories-wrap {
-        position: fixed;
-        left: 10px;
-        right: 10px;
-        top: calc(var(--header-height, 72px) + 8px);
+    #productos {
+        order: 2;
     }
-}
 
-/* mejorar interacción drag del carrusel */
-.carousel-track {
-    touch-action: pan-y;
-    -webkit-user-select: none;
-    user-select: none;
-    cursor: grab;
-}
-
-.carousel-track.dragging {
-    cursor: grabbing;
-}
-
-/* puntos indicativos: tamaño y contraste */
-.carousel-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #ddd;
-}
-
-.carousel-dot.active {
-    background: var(--accent);
-}
-
-/* mantener botón toggle visible en móvil */
-.cat-toggle {
-    display: none;
-}
-
-@media (max-width:600px) {
-    .cat-toggle {
-        display: block;
+    #categorias {
+        order: 4;
+        background: rgb(0, 0, 0);
     }
-}
 
-/* ...resto del CSS existente... */
+    .bottom-nav {
+        order: 3;
+    }
+
+    /* Contenedor flex para ordenar */
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search {
+        margin-bottom: 0;
+    }
+
+}
